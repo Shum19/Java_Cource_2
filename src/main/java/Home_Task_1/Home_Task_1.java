@@ -33,7 +33,7 @@ public class Home_Task_1 {
         mhb.addBeverage(coffeeLatte);
         mhb.addBeverage(blackTea);
 
-        System.out.println(mhb.getHotBeverage("Espresso", 300, 90));
+        System.out.println(mhb.getBeverage(380));
 
     }
 }

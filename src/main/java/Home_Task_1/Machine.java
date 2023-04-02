@@ -6,9 +6,9 @@ import java.util.List;
 
 public interface Machine {
 //    List<Beverage> beverages = new ArrayList<>();
-    Beverage getBeverageByType(String type);
-    Beverage getBeverageByName(String name);
-    Beverage getBeverageByPrice(double price);
-    Beverage getBeverageByVolume(int volume);
+    Beverage getBeverage(String type_name);
+
+    Beverage getBeverage(double price);
+    Beverage getBeverage(int volume);
 
 }

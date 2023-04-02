@@ -11,7 +11,7 @@ import java.util.List;
 public class MachineHotBeverage implements Machine{
     List<HotBeverage> hb = new ArrayList<>();
 
-    public HotBeverage getHotBeverage(String name, int volume, int temperature){
+    public HotBeverage getBeverage(String name, int volume, int temperature){
         for (HotBeverage hotBeverage : this.hb) {
             if (temperature == hotBeverage.getTemperature() & volume == hotBeverage.getVolume() &
                     name.equals(hotBeverage.getName())) return hotBeverage;
@@ -19,23 +19,18 @@ public class MachineHotBeverage implements Machine{
         return null;
     }
     @Override
-    public HotBeverage getBeverageByType(String type) {
+    public HotBeverage getBeverage(String type_name) {
         for (HotBeverage beverage : this.hb) {
-            if(type.equals(beverage.getType())) return beverage;
+            if(type_name.equals(beverage.getType())) return beverage;
+            else if (type_name.equals(beverage.getName())) return beverage;
         }
         return null;
     }
 
-    @Override
-    public HotBeverage getBeverageByName(String name) {
-        for (HotBeverage beverage : this.hb) {
-            if(name.equals(beverage.getName())) return beverage;
-        }
-        return null;
-    }
+
 
     @Override
-    public HotBeverage getBeverageByPrice(double price) {
+    public HotBeverage getBeverage(double price) {
         for (HotBeverage beverage : this.hb) {
             if(price == beverage.getPrice()) return beverage;
         }
@@ -43,7 +38,7 @@ public class MachineHotBeverage implements Machine{
     }
 
     @Override
-    public HotBeverage getBeverageByVolume(int volume) {
+    public HotBeverage getBeverage(int volume) {
         for (HotBeverage beverage : this.hb) {
             if(volume == beverage.getVolume()) return beverage;
         }
