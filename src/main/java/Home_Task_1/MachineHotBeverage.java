@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MachineHotBeverage implements Machine{
-    List<HotBeverage> hb = new ArrayList<>();
+    private List<HotBeverage> hb = new ArrayList<>();
 
     public HotBeverage getBeverage(String name, int volume, int temperature){
         for (HotBeverage hotBeverage : this.hb) {
@@ -27,8 +27,6 @@ public class MachineHotBeverage implements Machine{
         return null;
     }
 
-
-
     @Override
     public HotBeverage getBeverage(double price) {
         for (HotBeverage beverage : this.hb) {
@@ -44,7 +42,6 @@ public class MachineHotBeverage implements Machine{
         }
         return null;
     }
-
 
     public void addBeverage(HotBeverage beverage) {
         hb.add(beverage);
