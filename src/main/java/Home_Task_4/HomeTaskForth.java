@@ -38,6 +38,5 @@ public class HomeTaskForth {
 
         System.out.println(coffee.remove(coffeeAmericano));
         System.out.println(coffee.remove(coffeeLatte));
-
     }
 }
