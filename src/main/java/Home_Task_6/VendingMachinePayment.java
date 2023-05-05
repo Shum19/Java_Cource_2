@@ -1,7 +1,7 @@
 package Home_Task_6;
 
 public interface VendingMachinePayment {
-    void creditCardPayment();
-    void cashPayment();
-    void pTopPayment();
+   void creditCardPayment(int indexItem);
+    void cashPayment(int indexItem);
+    void pTopPayment(int indexItem);
 }

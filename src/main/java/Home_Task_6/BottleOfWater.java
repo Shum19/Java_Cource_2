@@ -1,8 +1,9 @@
 package Home_Task_6;
 
-public class BottleOfWater extends ItemsForSelling {
+public class BottleOfWater extends Price{
     private String condition;
     private String type;
+
 
     public String getCondition() {
         return this.condition;
@@ -21,7 +22,12 @@ public class BottleOfWater extends ItemsForSelling {
     }
 
     @Override
+    public double getPrice() {
+        return super.getPrice();
+    }
+
+    @Override
     public String toString() {
-        return String.format("%s, %s", this.type.toUpperCase(), this.condition.toUpperCase());
+        return String.format("%s %s water(price : %s)", this.type.toUpperCase(), this.condition.toUpperCase(), super.getPrice());
     }
 }
