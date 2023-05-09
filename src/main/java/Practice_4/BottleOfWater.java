@@ -1,6 +1,6 @@
 package Practice_4;
 
-public class BottleOfMachine extends Product {
+public class BottleOfWater extends Product {
     private String condition;
     private String type;
     public  BottleOfMachine(String condition, String type){
