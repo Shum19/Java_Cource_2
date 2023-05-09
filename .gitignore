@@ -26,3 +26,6 @@ pom.xml
 hs_err_pid*
 /target/
 /bin/
+src/main/java/Home_Taske_7/__pycache__/
+src/main/java/Practice_7/__pycache__/
+
